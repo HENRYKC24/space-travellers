@@ -1,4 +1,4 @@
-import { initialState } from '../initialState';
+import initialState from '../initialState';
 
 // Constants
 const JOIN_MISSION = 'JOIN_MISSION';

@@ -1,4 +1,4 @@
-import { initialState } from '../initialState';
+import initialState from '../initialState';
 
 // Constants
 const ADD_RESERVATION = 'space_travellers/rockets/ADD_RESERVATION';
