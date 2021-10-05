@@ -26,9 +26,9 @@ export const missionReducers = (state = initialState, action) => {
   const { type, payload } = action;
   switch (type) {
     case JOIN_MISSION:
-      return state.map((rocket) => {
-        if (rocket.id !== payload) return rocket;
-        return { ...rocket, joined: true };
+      return state.map((mission) => {
+        if (mission.id !== payload) return mission;
+        return { ...mission, joined: !mission.joined };
       });
 
     case FETCH_MISSION:

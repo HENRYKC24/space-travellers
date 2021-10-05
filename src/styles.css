@@ -47,12 +47,19 @@ th {
   padding: 5px;
 }
 
-.unjoined-mission {
-  background-color: green;
+.btn {
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.unjoined-mission {
+  background-color: green;
+}
+
+.joined-mission {
+  background-color: red;
 }
 
 tbody > tr:nth-child(odd) { background: #ccc; }

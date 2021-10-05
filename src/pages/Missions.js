@@ -1,7 +1,9 @@
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { joinMission } from '../redux/missions/missions';
 
 const Missions = () => {
   const missions = useSelector((state) => state.missions);
+  const dispatch = useDispatch();
 
   return (
     <div className="mission-page">
@@ -19,7 +21,7 @@ const Missions = () => {
               <td><b>{mission.name}</b></td>
               <td>{mission.description}</td>
               <td>
-                <button type="button" className={mission.joined ? 'joined-mission' : 'unjoined-mission'}>
+                <button onClick={() => dispatch(joinMission(mission.id))} type="button" className={mission.joined ? 'joined-mission btn' : 'unjoined-mission btn'}>
                   {mission.joined ? 'Leave' : 'Join'}
                   {' '}
                   Mission
