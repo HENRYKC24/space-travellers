@@ -27,7 +27,6 @@ const rocketReducer = (state = initialState, action) => {
   switch (type) {
     case FETCH_DATA:
       return payload;
-
     case ADD_RESERVATION:
       return state.map((rocket) => {
         if (rocket.id !== payload) return rocket;
