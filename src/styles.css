@@ -34,7 +34,7 @@ body {
   justify-content: space-between;
 }
 
-/* Missions Module */
+/* Start of Missions Module */
 .missions-table {
   border-collapse: collapse;
   margin: 2%;
@@ -43,7 +43,7 @@ body {
 .missions-table,
 td,
 th {
-  border: 1px solid rgb(114, 114, 114);
+  border: 1px solid rgb(187, 187, 187);
   padding: 5px;
 }
 
@@ -55,7 +55,7 @@ th {
 }
 
 .unjoined-mission {
-  background-color: green;
+  background-color: #2eaabe;
 }
 
 .joined-mission {
@@ -64,3 +64,5 @@ th {
 
 tbody > tr:nth-child(odd) { background: #ccc; }
 tbody > tr:nth-child(even) { background: #fff; }
+
+/* End of Missions Module */
