@@ -33,3 +33,27 @@ body {
   min-height: 100vh;
   justify-content: space-between;
 }
+
+/* Missions Module */
+.missions-table {
+  border-collapse: collapse;
+  margin: 2%;
+}
+
+.missions-table,
+td,
+th {
+  border: 1px solid rgb(114, 114, 114);
+  padding: 5px;
+}
+
+.unjoined-mission {
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+tbody > tr:nth-child(odd) { background: #ccc; }
+tbody > tr:nth-child(even) { background: #fff; }
