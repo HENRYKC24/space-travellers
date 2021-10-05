@@ -1,4 +1,6 @@
-export const initialState = {
+const initialState = {
   missions: [],
   rockets: [],
 };
+
+export default initialState;
