@@ -51,7 +51,23 @@ export const getRocketsFromServer = () => async (dispatch) => {
   const url = 'https://api.spacexdata.com/v3/rockets';
   const tempResult = await fetch(url);
   const finalResult = await tempResult.json();
-  dispatch(fetchData(finalResult));
+  console.log(finalResult);
+  const data = finalResult.map((item) => {
+    const {
+      id,
+      rocket_name: rocketName,
+      description,
+      flickr_images: rocketImageArray,
+    } = item;
+    return {
+      id,
+      rocketName,
+      description,
+      rocketImage: rocketImageArray[0],
+      reserved: false,
+    };
+  });
+  dispatch(fetchData(data));
 };
 
 export default rocketReducer;
