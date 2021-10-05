@@ -1,8 +1,9 @@
 import { NavLink } from 'react-router-dom';
+import Image from '../logo.png';
 
 const Navbar = () => (
   <nav className="navbar">
-    <h3><a href="/">SPACE TRAVELLERS</a></h3>
+    <img src={Image} alt="space x" width="80" height="80" />
 
     <ul className="nav">
       <li><NavLink to="/" exact>Rockets</NavLink></li>
