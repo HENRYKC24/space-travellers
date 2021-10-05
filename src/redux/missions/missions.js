@@ -4,7 +4,6 @@ import initialState from '../initialState';
 const FETCH_MISSION = 'FETCH_MISSION';
 const JOIN_MISSION = 'JOIN_MISSION';
 const LEAVE_MISSION = 'LEAVE_MISSION';
-const FETCH_MISSION = 'FETCH_MISSION';
 
 // Action Creators
 export const fetchData = (payload) => ({
@@ -15,11 +14,6 @@ export const fetchData = (payload) => ({
 export const joinMission = (id) => ({
   type: JOIN_MISSION,
   payload: id,
-});
-
-export const fetchData = (payload) => ({
-  type: FETCH_MISSION,
-  payload,
 });
 
 export const leaveMission = () => ({

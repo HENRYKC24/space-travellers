@@ -10,7 +10,6 @@ import PageNotFound from '../pages/PageNotFound';
 import Rockets from '../pages/Rockets';
 import Footer from './Footer';
 import Header from './Header';
-import { getMissionsFromServer } from '../redux/missions/missions';
 
 const App = () => {
   const dispatch = useDispatch();
@@ -18,7 +17,7 @@ const App = () => {
     dispatch(getRocketsFromServer());
     dispatch(getMissionsFromServer());
   }, []);
-  
+
   return (
     <div className="main">
       <section>
