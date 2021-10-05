@@ -3,3 +3,33 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+}
+
+.nav {
+  list-style: none;
+  padding-bottom: 2%;
+  display: flex;
+  gap: 10px;
+  margin-right: 10px;
+}
+
+.active {
+  color: teal;
+}
+
+.nav li a {
+  text-decoration: none;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
