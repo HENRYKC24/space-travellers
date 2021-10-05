@@ -26,11 +26,7 @@ const rocketReducer = (state = initialState, action) => {
   const { type, payload } = action;
   switch (type) {
     case FETCH_DATA:
-      return {
-        ...state,
-        rockets: payload,
-      };
-
+      return payload;
     case ADD_RESERVATION:
       return state.map((rocket) => {
         if (rocket.id !== payload) return rocket;
@@ -51,7 +47,6 @@ export const getRocketsFromServer = () => async (dispatch) => {
   const url = 'https://api.spacexdata.com/v3/rockets';
   const tempResult = await fetch(url);
   const finalResult = await tempResult.json();
-  console.log(finalResult);
   const data = finalResult.map((item) => {
     const {
       id,

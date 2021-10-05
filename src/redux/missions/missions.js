@@ -31,6 +31,9 @@ export const missionReducers = (state = initialState, action) => {
         return { ...rocket, joined: true };
       });
 
+    case FETCH_MISSION:
+      return payload;
+
     case LEAVE_MISSION:
       return state;
     default:
@@ -42,7 +45,7 @@ export const getMissionsFromServer = () => async (dispatch) => {
   const url = 'https://api.spacexdata.com/v3/missions';
   const tempResult = await fetch(url);
   const finalResult = await tempResult.json();
-  console.log(finalResult);
+
   const data = finalResult.map((item) => {
     const {
       mission_id: id,
@@ -56,6 +59,5 @@ export const getMissionsFromServer = () => async (dispatch) => {
       joined: false,
     };
   });
-
   dispatch(fetchData(data));
 };
