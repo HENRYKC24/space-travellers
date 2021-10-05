@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
-import { Route, Switch } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
+import { Route, Switch } from 'react-router-dom';
+import { getRocketsFromServer } from '../redux/rockets/rockets';
 
 import Missions from '../pages/Missions';
 import MyProfile from '../pages/MyProfile';
@@ -12,10 +13,12 @@ import { getMissionsFromServer } from '../redux/missions/missions';
 
 const App = () => {
   const dispatch = useDispatch();
+  
   useEffect(() => {
+    dispatch(getRocketsFromServer());
     dispatch(getMissionsFromServer());
   }, []);
-
+  
   return (
     <div className="main">
       <section>
