@@ -31,3 +31,26 @@ export const missionReducers = (state = initialState, action) => {
       return state;
   }
 };
+
+export const getRocketsFromServer = () => async () => {
+  const url = 'https://api.spacexdata.com/v3/missions';
+  const tempResult = await fetch(url);
+  const finalResult = await tempResult.json();
+  console.log(finalResult);
+  // const data = finalResult.map((item) => {
+  //   const {
+  //     id,
+  //     rocket_name: rocketName,
+  //     description,
+  //     flickr_images: rocketImageArray,
+  //   } = item;
+  //   return {
+  //     id,
+  //     rocketName,
+  //     description,
+  //     rocketImage: rocketImageArray[0],
+  //     reserved: false,
+  //   };
+  // });
+  // dispatch(fetchData(data));
+};
