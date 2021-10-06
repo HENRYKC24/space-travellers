@@ -27,9 +27,12 @@ rockets and missions. A user can reserve a rocket or join a mission. A user can 
 - Run `npm install` to get all the project dependancies.
 - Run `npm run start` to start the dev-server.
 
+## Tests
+- Run `npm test`.
+
 ## Authors
 
-:bust_in_silhouette: **Victor Otieno**
+👤 **Victor Otieno**
 
 - GitHub: [@githubhandle](https://github.com/vikitaotiz)
 - Twitter: [@twitterhandle](https://twitter.com/victoro29641869)
@@ -41,7 +44,7 @@ rockets and missions. A user can reserve a rocket or join a mission. A user can 
 - Twitter: [@twitterhandle](https://twitter.com/henrykc24)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/henry-kc)
 
-## :handshake: Contributing
+## Contributing
 
 Contributions, issues, and feature requests are welcome!
 Feel free to contribute

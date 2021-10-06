@@ -7,7 +7,7 @@ const Navbar = () => (
       <NavLink to="/" exact>
         <img src={Image} alt="space x" width="60" height="60" />
       </NavLink>
-      <h1 className="app-name">Space Travellers</h1>
+      <NavLink to="/" style={{ textDecoration: 'none', color: '#000' }}><h1 className="app-name">Space Travellers</h1></NavLink>
     </div>
     <ul className="nav">
       <li>
