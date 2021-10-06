@@ -73,8 +73,13 @@ tbody > tr:nth-child(even) { background: #fff; }
   display: flex;
 }
 
-.rocket-image {
+.rocket-image-section {
   margin: 0.5%;
+}
+
+.rocket-image {
+  width: 300px;
+  height: 200px;
 }
 
 .rocket-desc {
@@ -109,6 +114,21 @@ tbody > tr:nth-child(even) { background: #fff; }
   border-radius: 5px;
   padding: 1%;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .single-rocket {
+    margin: 0.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  .rocket-image {
+    width: 100%;
+    height: 300px;
+  }
 }
 
 /* End of rockets module */

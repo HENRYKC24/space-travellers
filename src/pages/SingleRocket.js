@@ -9,8 +9,8 @@ const SingleRocket = ({ rocket }) => {
 
   return (
     <li className="single-rocket">
-      <div className="rocket-image">
-        <img src={rocketImage} alt={rocket.rocketName} width="300" height="200" />
+      <div className="rocket-image-section">
+        <img src={rocketImage} alt={rocket.rocketName} className="rocket-image" />
       </div>
       <div className="rocket-desc">
         <span><b>{rocketName}</b></span>
