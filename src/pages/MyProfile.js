@@ -1,12 +1,11 @@
 import React from 'react';
-
-// import ReservedRockets from './';
+import ReservedRockets from './ReservedRockets';
 import MyMissionProfile from '../components/MyMissionProfile';
 
 const MyProfile = () => (
   <div>
     <MyMissionProfile />
-    {/* <ReservedRockets /> */}
+    <ReservedRockets />
   </div>
 );
 
