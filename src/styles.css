@@ -49,6 +49,24 @@ body {
   padding: 10px;
 }
 
+.profile-missions {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  list-style: none;
+  padding: 0;
+  margin: 2%;
+  list-style-position: inside;
+}
+
+.profile-missions li {
+  border-bottom: 1px solid #ccc;
+  padding: 1%;
+}
+
+.profile-missions li:last-child {
+  border-bottom: none;
+}
+
 @media screen and (max-width: 900px) {
   .table-row {
     display: flex;
