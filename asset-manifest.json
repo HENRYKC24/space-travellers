@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/space-travellers/static/css/main.d63e8511.chunk.css",
+    "main.js": "/space-travellers/static/js/main.b6b336fb.chunk.js",
+    "main.js.map": "/space-travellers/static/js/main.b6b336fb.chunk.js.map",
+    "runtime-main.js": "/space-travellers/static/js/runtime-main.764e25ee.js",
+    "runtime-main.js.map": "/space-travellers/static/js/runtime-main.764e25ee.js.map",
+    "static/js/2.e067f2ce.chunk.js": "/space-travellers/static/js/2.e067f2ce.chunk.js",
+    "static/js/2.e067f2ce.chunk.js.map": "/space-travellers/static/js/2.e067f2ce.chunk.js.map",
+    "index.html": "/space-travellers/index.html",
+    "static/css/main.d63e8511.chunk.css.map": "/space-travellers/static/css/main.d63e8511.chunk.css.map",
+    "static/js/2.e067f2ce.chunk.js.LICENSE.txt": "/space-travellers/static/js/2.e067f2ce.chunk.js.LICENSE.txt",
+    "static/media/logo.c1cd168a.png": "/space-travellers/static/media/logo.c1cd168a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.764e25ee.js",
+    "static/js/2.e067f2ce.chunk.js",
+    "static/css/main.d63e8511.chunk.css",
+    "static/js/main.b6b336fb.chunk.js"
+  ]
+}
