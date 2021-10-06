@@ -132,3 +132,22 @@ tbody > tr:nth-child(even) { background: #fff; }
 }
 
 /* End of rockets module */
+
+/* Start of profile rockets */
+.profile-rockets {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  list-style: none;
+  padding: 0;
+  margin: 2%;
+  list-style-position: inside;
+}
+
+.profile-rockets li {
+  border-bottom: 1px solid #ccc;
+  padding: 1%;
+}
+
+.profile-rockets li:last-child { border-bottom: none; }
+
+/* End of profile rockets */
