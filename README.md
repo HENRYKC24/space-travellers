@@ -16,6 +16,7 @@ rockets and missions. A user can reserve a rocket or join a mission. A user can 
 
 # Screenshot
 ------------
+![print](https://user-images.githubusercontent.com/42869046/136209541-971f1fda-a94a-4535-9f2c-fbba401666c6.JPG)
 
 ## Getting Started
 
