@@ -1,7 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render correctly 1`] = `
-<div>
-  This is the footer
-</div>
+<footer
+  className="footer"
+>
+  <p
+    className="footer-text"
+  >
+    Created with 💖 by Henry and Victor at Microverse Inc., US.
+  </p>
+</footer>
 `;

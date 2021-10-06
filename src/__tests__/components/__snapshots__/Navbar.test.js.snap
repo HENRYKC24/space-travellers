@@ -4,12 +4,42 @@ exports[`should render correctly 1`] = `
 <nav
   className="navbar"
 >
-  <img
-    alt="space x"
-    height="80"
-    src="logo.png"
-    width="80"
-  />
+  <div
+    className="app-name-logo"
+  >
+    <a
+      aria-current="page"
+      className="active"
+      href="/"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      <img
+        alt="space x"
+        height="60"
+        src="logo.png"
+        width="60"
+      />
+    </a>
+    <a
+      aria-current="page"
+      className="active"
+      href="/"
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "#000",
+          "textDecoration": "none",
+        }
+      }
+    >
+      <h1
+        className="app-name"
+      >
+        Space Travellers
+      </h1>
+    </a>
+  </div>
   <ul
     className="nav"
   >
@@ -17,7 +47,6 @@ exports[`should render correctly 1`] = `
       <a
         aria-current="page"
         className="active"
-        data-testid="Rockets"
         href="/"
         onClick={[Function]}
         style={Object {}}
@@ -28,14 +57,17 @@ exports[`should render correctly 1`] = `
     <li>
       <a
         aria-current={null}
-        data-testid="Missions"
         href="/missions"
         onClick={[Function]}
       >
         Missions
       </a>
     </li>
-    |
+    <li
+      className="pipe"
+    >
+      |
+    </li>
     <li>
       <a
         aria-current={null}
