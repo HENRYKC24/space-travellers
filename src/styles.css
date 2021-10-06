@@ -148,6 +148,11 @@ tbody > tr:nth-child(even) { background: #fff; }
   padding: 1%;
 }
 
+.profile-missions li {
+  border-bottom: 1px solid #ccc;
+  padding: 1%;
+}
+
 .profile-rockets li:last-child { border-bottom: none; }
 
 /* End of profile rockets */
@@ -173,11 +178,6 @@ tbody > tr:nth-child(even) { background: #fff; }
   padding: 0;
   margin: 2%;
   list-style-position: inside;
-}
-
-.profile-missions li {
-  border-bottom: 1px solid #ccc;
-  padding: 1%;
 }
 
 .profile-missions li:last-child {
