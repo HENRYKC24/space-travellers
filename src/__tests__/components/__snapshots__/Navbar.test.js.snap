@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly 1`] = `
+<nav
+  className="navbar"
+>
+  <img
+    alt="space x"
+    height="80"
+    src="logo.png"
+    width="80"
+  />
+  <ul
+    className="nav"
+  >
+    <li>
+      <a
+        aria-current="page"
+        className="active"
+        data-testid="Rockets"
+        href="/"
+        onClick={[Function]}
+        style={Object {}}
+      >
+        Rockets
+      </a>
+    </li>
+    <li>
+      <a
+        aria-current={null}
+        data-testid="Missions"
+        href="/missions"
+        onClick={[Function]}
+      >
+        Missions
+      </a>
+    </li>
+    |
+    <li>
+      <a
+        aria-current={null}
+        href="/profile"
+        onClick={[Function]}
+      >
+        My Profile
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
