@@ -1,5 +1,11 @@
 import React from 'react';
 
-const Footer = () => <div>This is the footer</div>;
+const Footer = () => (
+  <footer className="footer">
+    <p className="footer-text">
+      Created with 💖 by Henry and Victor at Microverse Inc., US.
+    </p>
+  </footer>
+);
 
 export default Footer;
