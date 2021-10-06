@@ -152,7 +152,6 @@ tbody > tr:nth-child(even) { background: #fff; }
   border-radius: 5px;
   list-style: none;
   padding: 0;
-  margin: 2%;
   list-style-position: inside;
 }
 
@@ -189,8 +188,21 @@ tbody > tr:nth-child(even) { background: #fff; }
   border-radius: 5px;
   list-style: none;
   padding: 0;
-  margin: 2%;
   list-style-position: inside;
+}
+
+.profile-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 0 2vw;
+  gap: 10px;
+}
+
+.profile-container > * {
+  display: inline-block;
+  /* text-align: justify; */
+  min-width: 350px;
+  margin: auto;
 }
 
 .profile-missions li:last-child {
@@ -207,6 +219,22 @@ tbody > tr:nth-child(even) { background: #fff; }
 
 .footer-text {
   margin: 0;
+}
+
+@media screen and (max-width: 755px) {
+  .profile-container {
+    grid-template-columns: 100%;
+  }
+
+  .profile-container > * {
+    width: 100%;
+    min-width: max-content;
+  }
+
+  .join,
+  .reverse {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 900px) {
