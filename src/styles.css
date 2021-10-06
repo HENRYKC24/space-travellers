@@ -151,3 +151,47 @@ tbody > tr:nth-child(even) { background: #fff; }
 .profile-rockets li:last-child { border-bottom: none; }
 
 /* End of profile rockets */
+.mission-table {
+  border: 0.5px solid grey;
+  border-collapse: collapse;
+}
+
+.table-row:nth-child(odd):not(.first-row) {
+  background-color: #f2f2f2;
+}
+
+.table-data,
+.th {
+  border: 0.5px solid grey;
+  padding: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .table-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+  }
+
+  .table-row:not(:first-child) {
+    margin-top: 10px;
+  }
+
+  .table-row > * {
+    margin: 7px;
+  }
+
+  .table-data,
+  .th {
+    border: none;
+  }
+
+  .table-data:first-child {
+    font-size: 2rem;
+  }
+
+  .first-row {
+    display: none;
+  }
+}

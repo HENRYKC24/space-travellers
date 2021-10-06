@@ -1,0 +1,41 @@
+.member {
+  border: 0.5px solid #e9858f;
+  color: #e9858f;
+  font-size: 0.8rem;
+  width: 105px;
+  height: 20px;
+  line-height: 20px;
+  font-weight: bolder;
+}
+
+.notMember {
+  border: 0.5px solid black;
+  color: black;
+  font-size: 0.8rem;
+  width: 105px;
+  height: 20px;
+  line-height: 20px;
+}
+
+.active {
+  display: inline-block;
+  background-color: #18a2b8;
+  text-align: center;
+  color: white;
+  font-size: 0.8rem;
+  width: 105px;
+  height: 20px;
+  line-height: 20px;
+}
+
+.inactive {
+  display: inline-block;
+  background-color: #6d757d;
+  font-weight: bolder;
+  color: white;
+  font-size: 0.6rem;
+  width: 105px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+}

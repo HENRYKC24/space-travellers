@@ -2,8 +2,7 @@ import initialState from '../initialState';
 
 // Constants
 const FETCH_MISSION = 'FETCH_MISSION';
-const JOIN_MISSION = 'JOIN_MISSION';
-const LEAVE_MISSION = 'LEAVE_MISSION';
+const LEAVE_JOIN_MISSION = 'LEAVE_JOIN_MISSION';
 
 // Action Creators
 export const fetchData = (payload) => ({
@@ -11,8 +10,8 @@ export const fetchData = (payload) => ({
   payload,
 });
 
-export const joinMission = (id) => ({
-  type: JOIN_MISSION,
+export const leaveJoinMission = (id) => ({
+  type: LEAVE_JOIN_MISSION,
   payload: id,
 });
 
@@ -20,17 +19,15 @@ export const joinMission = (id) => ({
 export const missionReducers = (state = initialState, action) => {
   const { type, payload } = action;
   switch (type) {
-    case JOIN_MISSION:
-      return state.map((mission) => {
-        if (mission.id !== payload) return mission;
-        return { ...mission, joined: !mission.joined };
+    case LEAVE_JOIN_MISSION:
+      return state.map((rocket) => {
+        if (rocket.id !== payload) return rocket;
+        return { ...rocket, joined: !rocket.joined };
       });
 
     case FETCH_MISSION:
       return payload;
 
-    case LEAVE_MISSION:
-      return state;
     default:
       return state;
   }
