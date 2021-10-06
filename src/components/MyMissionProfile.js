@@ -1,8 +1,12 @@
 import { useSelector } from 'react-redux';
 
 const MyMissionProfile = () => {
-  const missions = useSelector((state) => state.missions.filter((mission) => mission.joined));
-
+  let missions = useSelector((state) => state.missions);
+  if (!Array.isArray(missions)) {
+    missions = [];
+  } else {
+    missions = missions.filter((mission) => mission.joined);
+  }
   return (
     <div>
       <ul className="profile-missions">
