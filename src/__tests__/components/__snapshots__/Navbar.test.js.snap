@@ -12,7 +12,11 @@ exports[`should render correctly 1`] = `
       className="active"
       href="/"
       onClick={[Function]}
-      style={Object {}}
+      style={
+        Object {
+          "border": "none",
+        }
+      }
     >
       <img
         alt="space x"
@@ -28,6 +32,7 @@ exports[`should render correctly 1`] = `
       onClick={[Function]}
       style={
         Object {
+          "border": "none",
           "color": "#000",
           "textDecoration": "none",
         }
