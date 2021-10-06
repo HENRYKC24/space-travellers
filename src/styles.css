@@ -67,3 +67,48 @@ tbody > tr:nth-child(odd) { background: #f2f2f2; }
 tbody > tr:nth-child(even) { background: #fff; }
 
 /* End of Missions Module */
+
+/* Start of rockets module */
+.single-rocket {
+  display: flex;
+}
+
+.rocket-image {
+  margin: 2%;
+}
+
+.rocket-desc {
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.rocket-btn {
+  background-color: #2eaabe;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 1%;
+  cursor: pointer;
+}
+
+.rocket-reserved {
+  background-color: #2eaabe;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 2px;
+  margin-right: 8px;
+}
+
+.rocket-btn-reserved {
+  background-color: rgb(228, 228, 228);
+  color: #000;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 1%;
+  cursor: pointer;
+}
+
+/* End of rockets module */
