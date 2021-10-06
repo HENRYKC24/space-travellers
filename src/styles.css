@@ -200,7 +200,6 @@ tbody > tr:nth-child(even) { background: #fff; }
 
 .profile-container > * {
   display: inline-block;
-  /* text-align: justify; */
   min-width: 350px;
   margin: auto;
 }
