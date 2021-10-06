@@ -10,7 +10,7 @@ const SingleRocket = ({ rocket }) => {
   return (
     <li className="single-rocket">
       <div className="rocket-image">
-        <img src={rocketImage} alt={rocket.rocketName} width="200" height="150" />
+        <img src={rocketImage} alt={rocket.rocketName} width="300" height="200" />
       </div>
       <div className="rocket-desc">
         <span><b>{rocketName}</b></span>

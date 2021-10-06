@@ -74,11 +74,11 @@ tbody > tr:nth-child(even) { background: #fff; }
 }
 
 .rocket-image {
-  margin: 2%;
+  margin: 0.5%;
 }
 
 .rocket-desc {
-  margin: 2%;
+  margin: 0.5%;
   display: flex;
   flex-direction: column;
   gap: 15px;
