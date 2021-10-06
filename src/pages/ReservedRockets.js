@@ -1,8 +1,12 @@
 import { useSelector } from 'react-redux';
 
 const ReservedRockets = () => {
-  const rockets = useSelector((state) => state.rockets.filter((rocket) => rocket.reserved));
-
+  let rockets = useSelector((state) => state.rockets);
+  if (!Array.isArray(rockets)) {
+    rockets = [];
+  } else {
+    rockets = rockets.filter((rocket) => rocket.reserved);
+  }
   return (
     <div>
       <ul className="profile-rockets">
