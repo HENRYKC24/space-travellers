@@ -12,7 +12,7 @@ rockets and missions. A user can reserve a rocket or join a mission. A user can 
 - Javascript
 
 # Demo Links
-[Demo Link](https://henrykc24.github.io/space-travellers/profile)
+[Demo Link](https://henrykc24.github.io/space-travellers)
 
 # Screenshot
 ------------
