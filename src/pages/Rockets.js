@@ -6,7 +6,7 @@ const Rockets = () => {
 
   return (
     <div>
-      <ul>
+      <ul className="rockets-container">
         {rockets.length > 0 ? rockets.map((rocket) => (
           <SingleRocket key={rocket.id} rocket={rocket} />
         )) : 'No Rockets'}

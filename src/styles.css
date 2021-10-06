@@ -2,6 +2,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .header {
@@ -82,8 +83,14 @@ tbody > tr:nth-child(even) { background: #fff; }
 /* End of Missions Module */
 
 /* Start of rockets module */
+.rockets-container {
+  padding: 0;
+}
+
 .single-rocket {
   display: flex;
+  justify-content: flex-start;
+  padding: 0 2vw;
 }
 
 .rocket-image-section {
@@ -141,6 +148,10 @@ tbody > tr:nth-child(even) { background: #fff; }
   .rocket-image {
     width: 100%;
     height: 300px;
+  }
+
+  .app-name {
+    display: none;
   }
 }
 
@@ -218,6 +229,11 @@ tbody > tr:nth-child(even) { background: #fff; }
 
 .footer-text {
   margin: 0;
+}
+
+.app-name-logo {
+  display: flex;
+  gap: 5px;
 }
 
 @media screen and (max-width: 755px) {
