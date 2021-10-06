@@ -15,7 +15,7 @@ const Missions = () => {
           <th className="th">Misson</th>
           <th className="th">Description</th>
           <th className="th">Status</th>
-          <th className="th">Actions</th>
+          <th className="th">Action</th>
         </tr>
       </thead>
       <tbody>
