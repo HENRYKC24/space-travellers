@@ -237,4 +237,8 @@ tbody > tr:nth-child(even) { background: #fff; }
   .first-row {
     display: none;
   }
+
+  .footer-text {
+    font-size: 0.8rem;
+  }
 }
