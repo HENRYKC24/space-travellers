@@ -1,0 +1,38 @@
+.member {
+  border: 0.5px solid red;
+  color: red;
+  font-size: 0.8rem;
+  width: 100px;
+  height: 20px;
+}
+
+.notMember {
+  border: 0.5px solid black;
+  color: black;
+  font-size: 0.8rem;
+  width: 100px;
+  height: 20px;
+}
+
+.active {
+  display: inline-block;
+  background-color: #18a2b8;
+  text-align: center;
+  color: white;
+  font-size: 0.8rem;
+  width: 90px;
+  height: 20px;
+  line-height: 20px;
+}
+
+.inactive {
+  display: inline-block;
+  background-color: #6d757d;
+  font-weight: bolder;
+  color: white;
+  font-size: 0.6rem;
+  width: 90px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+}
