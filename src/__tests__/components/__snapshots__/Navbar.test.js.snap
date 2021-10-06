@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly 1`] = `
+<nav
+  className="navbar"
+>
+  <div
+    className="app-name-logo"
+  >
+    <a
+      aria-current="page"
+      className="active"
+      href="/"
+      onClick={[Function]}
+      style={
+        Object {
+          "border": "none",
+        }
+      }
+    >
+      <img
+        alt="space x"
+        height="60"
+        src="logo.png"
+        width="60"
+      />
+    </a>
+    <a
+      aria-current="page"
+      className="active"
+      href="/"
+      onClick={[Function]}
+      style={
+        Object {
+          "border": "none",
+          "color": "#000",
+          "textDecoration": "none",
+        }
+      }
+    >
+      <h1
+        className="app-name"
+      >
+        Space Travellers
+      </h1>
+    </a>
+  </div>
+  <ul
+    className="nav"
+  >
+    <li>
+      <a
+        aria-current="page"
+        className="active"
+        href="/"
+        onClick={[Function]}
+        style={Object {}}
+      >
+        Rockets
+      </a>
+    </li>
+    <li>
+      <a
+        aria-current={null}
+        href="/missions"
+        onClick={[Function]}
+      >
+        Missions
+      </a>
+    </li>
+    <li
+      className="pipe"
+    >
+      |
+    </li>
+    <li>
+      <a
+        aria-current={null}
+        href="/profile"
+        onClick={[Function]}
+      >
+        My Profile
+      </a>
+    </li>
+  </ul>
+</nav>
+`;

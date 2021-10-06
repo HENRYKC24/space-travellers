@@ -1,0 +1,290 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gainsboro;
+  align-items: center;
+  padding: 0 2vw;
+}
+
+.pipe {
+  color: gainsboro;
+  font-weight: bolder;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 30px 0;
+  padding: 0;
+}
+
+.nav li a {
+  text-decoration: unset;
+  color: #2eaabe;
+}
+
+.active {
+  color: #2eaabe;
+  text-decoration: underline;
+  border-bottom: solid;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+/* Start of Missions Module */
+.missions-table {
+  border-collapse: collapse;
+  margin: 2%;
+}
+
+.missions-table,
+td,
+th {
+  border: 1px solid #d6d6d6;
+  padding: 5px;
+}
+
+.btn {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.unjoined-mission {
+  background-color: #2eaabe;
+}
+
+.joined-mission {
+  background-color: red;
+}
+
+tbody > tr:nth-child(odd) { background: #f2f2f2; }
+tbody > tr:nth-child(even) { background: #fff; }
+
+/* End of Missions Module */
+
+/* Start of rockets module */
+.rockets-container {
+  padding: 0;
+}
+
+.single-rocket {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 2vw;
+}
+
+.rocket-image-section {
+  margin: 0.5%;
+}
+
+.rocket-image {
+  width: 300px;
+  height: 200px;
+}
+
+.rocket-desc {
+  margin: 0.5%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.rocket-btn {
+  background-color: #2eaabe;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 1%;
+  cursor: pointer;
+}
+
+.rocket-reserved {
+  background-color: #2eaabe;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 2px;
+  margin-right: 8px;
+}
+
+.rocket-btn-reserved {
+  background-color: rgb(228, 228, 228);
+  color: #000;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 1%;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .single-rocket {
+    margin: 0.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  .rocket-image {
+    width: 100%;
+    height: 300px;
+  }
+
+  .app-name {
+    display: none;
+  }
+}
+
+/* End of rockets module */
+
+/* Start of profile rockets */
+.profile-rockets {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  list-style: none;
+  padding: 0;
+  list-style-position: inside;
+}
+
+.profile-rockets li {
+  border-bottom: 1px solid #ccc;
+  padding: 1%;
+}
+
+.profile-missions li {
+  border-bottom: 1px solid #ccc;
+  padding: 1%;
+}
+
+.profile-rockets li:last-child { border-bottom: none; }
+
+/* End of profile rockets */
+.mission-table {
+  border: 0.5px solid grey;
+  border-collapse: collapse;
+}
+
+.table-row:nth-child(odd):not(.first-row) {
+  background-color: #f2f2f2;
+}
+
+.table-data,
+.th {
+  border: 0.5px solid grey;
+  padding: 10px;
+}
+
+.profile-missions {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  list-style: none;
+  padding: 0;
+  list-style-position: inside;
+}
+
+.profile-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 0 2vw;
+  gap: 10px;
+}
+
+.profile-container > * {
+  display: inline-block;
+  min-width: 350px;
+  margin: auto;
+}
+
+.profile-missions li:last-child {
+  border-bottom: none;
+}
+
+.footer {
+  text-align: center;
+  border-top: 1px solid #b4a9a9;
+  height: 70px;
+  line-height: 70px;
+  padding: 0;
+}
+
+.footer-text {
+  margin: 0;
+}
+
+.app-name-logo {
+  display: flex;
+  gap: 5px;
+}
+
+@media screen and (max-width: 755px) {
+  .profile-container {
+    grid-template-columns: 100%;
+  }
+
+  .profile-container > * {
+    width: 100%;
+    min-width: max-content;
+  }
+
+  .join,
+  .reverse {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .table-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+  }
+
+  .table-row:not(:first-child) {
+    margin-top: 10px;
+  }
+
+  .table-row > * {
+    margin: 7px;
+  }
+
+  .table-data,
+  .th {
+    border: none;
+  }
+
+  .table-data:first-child {
+    font-size: 2rem;
+  }
+
+  .first-row {
+    display: none;
+  }
+
+  .footer-text {
+    font-size: 0.8rem;
+  }
+}
