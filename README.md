@@ -52,3 +52,12 @@ Feel free to contribute
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## Acknowledgments
+- We remain indepted to the Facebook team that develop create-react-app and React Redux as open source.
+- A special thanks to Microverse for inspiring this project. We really appreciate.
+- A special thanks goes to all our peers at Microverse for being ther for us.
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
