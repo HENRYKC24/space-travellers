@@ -34,6 +34,12 @@ rockets and missions. A user can reserve a rocket or join a mission. A user can 
 - Twitter: [@twitterhandle](https://twitter.com/victoro29641869)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/victor-otieno-22ba7773/)
 
+👤 **Henry Kc**
+
+- GitHub: [@githubhandle](https://github.com/henrykc24)
+- Twitter: [@twitterhandle](https://twitter.com/henrykc24)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/henry-kc)
+
 ## :handshake: Contributing
 
 Contributions, issues, and feature requests are welcome!
