@@ -16,11 +16,6 @@ export const joinMission = (id) => ({
   payload: id,
 });
 
-export const leaveMission = () => ({
-  type: LEAVE_MISSION,
-  payload: false,
-});
-
 // Reducesrs
 export const missionReducers = (state = initialState, action) => {
   const { type, payload } = action;
