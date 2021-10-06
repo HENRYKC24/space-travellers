@@ -6,8 +6,8 @@ const Navbar = () => (
     <img src={Image} alt="space x" width="80" height="80" />
 
     <ul className="nav">
-      <li><NavLink to="/" exact>Rockets</NavLink></li>
-      <li><NavLink to="/missions" exact>Missions</NavLink></li>
+      <li><NavLink to="/" exact data-testid="Rockets">Rockets</NavLink></li>
+      <li><NavLink to="/missions" exact data-testid="Missions">Missions</NavLink></li>
       |
       <li><NavLink to="/profile" exact>My Profile</NavLink></li>
     </ul>
