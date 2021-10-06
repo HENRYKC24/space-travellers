@@ -32,12 +32,15 @@ body {
   padding: 0;
 }
 
-.active {
+.nav li a {
+  text-decoration: unset;
   color: #2eaabe;
 }
 
-.nav li a {
-  text-decoration: none;
+.active {
+  color: #2eaabe;
+  text-decoration: underline;
+  border-bottom: solid;
 }
 
 .main {
