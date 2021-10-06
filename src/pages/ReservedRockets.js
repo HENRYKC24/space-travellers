@@ -8,12 +8,14 @@ const ReservedRockets = () => {
     rockets = rockets.filter((rocket) => rocket.reserved);
   }
   return (
-    <div>
+    <div className="reserve">
+      <h1>My Rockets</h1>
       <ul className="profile-rockets">
         {rockets.length > 0 ? rockets.map((rocket) => (
           <li key={rocket.id} rocket={rocket}><b>{rocket.rocketName}</b></li>
-        )) : 'No Rockets Reserved'}
+        )) : null}
       </ul>
+      {!rockets.length && <p>No Rockets Reserved</p>}
     </div>
   );
 };
