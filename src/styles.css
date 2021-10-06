@@ -197,6 +197,18 @@ tbody > tr:nth-child(even) { background: #fff; }
   border-bottom: none;
 }
 
+.footer {
+  text-align: center;
+  border-top: 1px solid #b4a9a9;
+  height: 70px;
+  line-height: 70px;
+  padding: 0;
+}
+
+.footer-text {
+  margin: 0;
+}
+
 @media screen and (max-width: 900px) {
   .table-row {
     display: flex;
@@ -224,5 +236,9 @@ tbody > tr:nth-child(even) { background: #fff; }
 
   .first-row {
     display: none;
+  }
+
+  .footer-text {
+    font-size: 0.8rem;
   }
 }
